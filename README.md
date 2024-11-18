@@ -3,7 +3,6 @@ This Banking Application is a robust platform designed to handle core banking fu
 It supports account creation, deposits, withdrawals, fund transfers, balance inquiries, and transaction history. 
 Built with a focus on scalability, security, and user experience, this application is suitable for both educational and real-world implementations.
 
-Features
 Account Management :
 ---------------------
 * Create, update, and delete accounts.
