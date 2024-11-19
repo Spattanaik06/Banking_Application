@@ -2,9 +2,6 @@ package test;
 
 import java.io.IOException;
 
-import com.mysql.cj.Session;
-
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -33,7 +30,7 @@ public class LoginServlet extends HttpServlet
 			System.out.println(bankBean.toString());
 			httpSession.setAttribute("bbean", bankBean);
 			
-			req.getRequestDispatcher("deposit.jsp").forward(req, resp);
+			req.getRequestDispatcher("loginhome.html").forward(req, resp);
 			
 		}
 	}

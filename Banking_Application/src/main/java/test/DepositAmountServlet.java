@@ -27,7 +27,7 @@ public class DepositAmountServlet extends HttpServlet
 			int k=new DepositAmountDao().deposit(uname,amount);
 			if(k>0)
 			{
-				req.setAttribute("msg", " Sir your amount succesfully deposited to your account.");
+				req.setAttribute("msg", ", Amount succesfully deposited to your account.");
 				req.getRequestDispatcher("DepositSuccess.jsp").forward(req, resp);
 			}
 			
