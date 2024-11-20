@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet
 			String password=req.getParameter("password");
 			int accno=Integer.parseInt( req.getParameter("accno"));
 			BankBean bankBean=new LoginDao().login(uname, password, accno);
-			System.out.println(bankBean.toString());
+//			System.out.println(bankBean.toString());
 			httpSession.setAttribute("bbean", bankBean);
 			
 			req.getRequestDispatcher("loginhome.html").forward(req, resp);

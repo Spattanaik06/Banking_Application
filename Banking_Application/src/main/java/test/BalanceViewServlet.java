@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 @SuppressWarnings("serial")
-@WebServlet("")
+@WebServlet("/checkbalance")
 public class BalanceViewServlet extends HttpServlet
 {
 	@Override
@@ -20,7 +20,7 @@ public class BalanceViewServlet extends HttpServlet
 		HttpSession hSession=req.getSession(false);
 		if(hSession==null)
 		{
-			req.setAttribute("msg", "Invalid session..");
+			req.setAttribute("msg","Please Login First....");
 			req.getRequestDispatcher("msg.jsp").forward(req, resp);
 		}
 		else {
