@@ -10,7 +10,7 @@ public class BalanceReciverDao
 	public int targetAccount(int taccount,double amount)
 	{
 		Connection connection=DBConnection.getCon();
-		String queryString="update from bankingapplication67 set amount=amount+? where account=?";
+		String queryString="update  bankingapplication67 set amount=amount+? where account=?";
 		try {
 			PreparedStatement preparedStatement=connection.prepareStatement(queryString);
 			preparedStatement.setDouble(1, amount);

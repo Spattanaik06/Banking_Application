@@ -11,7 +11,7 @@ public class BalanceSenderDao
 	{
 		Connection connection=DBConnection.getCon();
 		try {
-			String queryString="update from bankingapplication67 set amount=amount - ? where account=? and username=? and password=?";
+			String queryString="update bankingapplication67 set amount=amount - ? where account=? and uname=? and password=?";
 			PreparedStatement preparedStatement=connection.prepareStatement(queryString);
 			preparedStatement.setDouble(1, amount);
 			preparedStatement.setInt(2, accno);
