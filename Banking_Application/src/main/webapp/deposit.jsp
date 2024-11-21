@@ -12,7 +12,7 @@ BankBean bankBean=(BankBean)session.getAttribute("bbean");
 out.println("Enter the Amount u want to deposit ,"+bankBean.getUname()+"<br>");
 %>
 <form action="depositamount" method="post">
-<input type="text" name="amount" placeholder="Enter Amount">
+<input type="text" name="amount" placeholder="Enter Amount"><br>
 <button type="submit">Deposit</button>
 
 </form>

@@ -12,7 +12,7 @@ BankBean bankBean=(BankBean)session.getAttribute("bbean");
 out.println("Enter the Amount u want to withdraw ,"+bankBean.getUname()+"<br>");
 %>
 <form action="withdrawamount" method="post">
-<input type="text" name="amount" placeholder="Enter Amount">
+<input type="text" name="amount" placeholder="Enter Amount"><br>
 <button type="submit">Withdraw</button>
 
 </form>
