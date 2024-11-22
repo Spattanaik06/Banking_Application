@@ -54,7 +54,7 @@ border:solid black;
 		<a href="withdraw">WITHDRAW</a> 
 		<a href="TransferForm.html">TRANSFER</a>
 		<a href="close">CLOSE AC</a>
-		<a href="about">ABOUT US</a>
+		<a href="About.html">ABOUT US</a>
 		<a href="logout">LOGOUT</a>
   </div>
 <%
