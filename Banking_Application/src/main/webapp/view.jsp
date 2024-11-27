@@ -44,40 +44,38 @@ a {
 a:hover {
     color: #00ffcc;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-input {
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    border: 2px solid #00c3ff;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-button {
-    padding: 10px 20px;
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    text-align: center;
     font-size: 18px;
-    color: #fff;
-    background-color: #00c3ff;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    overflow: hidden;
 }
 
-button:hover {
-    background-color: #00a3cc;
+th, td {
+    padding: 15px;
+    border: 1px solid #00c3ff;
 }
 
-p {
+th {
+    background-color: #00c3ff;
+    color: #000000;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.3);
+ }
+
+#id {
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
@@ -100,6 +98,10 @@ background-color: black;
 width:auto;
 height:35px;
 padding-top:10px;
+}
+#tabledata
+{
+ text-align:center;
 }
 </style>
 </head>
@@ -126,7 +128,8 @@ padding-top:10px;
 BankBean bankBean1=(BankBean)session.getAttribute("bbean");
 
 %>
-<table>
+
+<table >
     <tr>
         <th>
             ACCOUNT NO 
@@ -157,7 +160,8 @@ BankBean bankBean1=(BankBean)session.getAttribute("bbean");
         
     </tr>
 </table>
-</p>
+
+
 <footer>
         &copy; 2024 Bank Of Odisha. All Rights Reserved.
     </footer>

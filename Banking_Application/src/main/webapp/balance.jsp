@@ -5,42 +5,111 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+
 <style>
 body {
-	background-image: url("./bank_image/bank_banner.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	
+    background-image: url("./bank_image/bank_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-	text-align: center;
-	font-size: 100px;
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+    margin-top: 30px;
 }
-div
-{
-    height:auto;
-    width: auto;
-    background-color: black;
+
+div {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
+
 a {
-	 margin-right:100px;
-	margin-left:50px;
-	
+    margin: 0 20px;
     text-decoration: none;
-    color: aliceblue;
+    color: #00c3ff;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
 }
 
-table,th,td
-{
-background:aqua;
-border:solid black;
+a:hover {
+    color: #00ffcc;
+}
 
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+th, td {
+    padding: 15px;
+    border: 1px solid #00c3ff;
+}
+
+th {
+    background-color: #00c3ff;
+    color: #000000;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #00a3cc;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+nav {
+    background-color: black;
+    width: auto;
+    height: 35px;
+    padding-top: 10px;
 }
 </style>
-
-
 </head>
 
 <body>
@@ -49,6 +118,7 @@ border:solid black;
 
 	<p>
 	<div>
+	<nav>
 		<a href="checkbalance">BALANCE</a>
 		<a href="deposit">DEPOSIT</a> 
 		<a href="withdraw">WITHDRAW</a> 
@@ -56,7 +126,9 @@ border:solid black;
 		<a href="close">CLOSE AC</a>
 		<a href="About.html">ABOUT US</a>
 		<a href="logout">LOGOUT</a>
-  </div>
+		
+	</nav>	
+    </div>
   <p>
 <%
 BankBean bankBean1=(BankBean)session.getAttribute("bbean");
@@ -88,7 +160,8 @@ BankBean bankBean1=(BankBean)session.getAttribute("bbean");
         
     </tr>
 </table>
-<footer>
+
+    <footer>
         &copy; 2024 Bank Of Odisha. All Rights Reserved.
     </footer>
 </body>

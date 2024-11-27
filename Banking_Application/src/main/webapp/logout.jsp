@@ -111,13 +111,13 @@ padding-top:10px;
 	<p>
 	<div>
 	<nav>
+		<a href="Register.html">NEW ACCOUNT</a> 
 		<a href="checkbalance">BALANCE</a>
 		<a href="deposit">DEPOSIT</a> 
 		<a href="withdraw">WITHDRAW</a> 
 		<a href="TransferForm.html">TRANSFER</a>
 		<a href="close">CLOSE AC</a>
 		<a href="About.html">ABOUT US</a>
-		<a href="logout">LOGOUT</a>
 		
 	</nav>	
     </div>
@@ -128,7 +128,7 @@ padding-top:10px;
 	
 	%>
 	</p>
-	<%@include file="bankhome.html" %>
+	
 	<footer>
         &copy; 2024 Bank Of Odisha. All Rights Reserved.
     </footer>
