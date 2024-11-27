@@ -57,10 +57,12 @@ border:solid black;
 		<a href="About.html">ABOUT US</a>
 		<a href="logout">LOGOUT</a>
   </div>
+  <p>
 <%
 BankBean bankBean1=(BankBean)session.getAttribute("bbean");
 
 %>
+</p>
 <table>
     <tr>
         <th>
@@ -86,5 +88,8 @@ BankBean bankBean1=(BankBean)session.getAttribute("bbean");
         
     </tr>
 </table>
+<footer>
+        &copy; 2024 Bank Of Odisha. All Rights Reserved.
+    </footer>
 </body>
 </html>

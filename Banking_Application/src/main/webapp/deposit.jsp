@@ -93,7 +93,7 @@ h1 {
 div {
     height: auto;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
@@ -160,19 +160,32 @@ footer {
     color: #ffffff;
     font-size: 14px;
 }
+nav
+{
+background-color: black;
+width:auto;
+height:35px;
+padding-top:10px;
+}
 </style>
 </head>
 
 <body>
-    <h1>Bank Of Odisha</h1>
-    <div>
-        <a href="checkbalance">BALANCE</a>
-        <a href="deposit">DEPOSIT</a> 
-        <a href="withdraw">WITHDRAW</a> 
-        <a href="TransferForm.html">TRANSFER</a>
-        <a href="close">CLOSE AC</a>
-        <a href="About.html">ABOUT US</a>
-        <a href="logout">LOGOUT</a>
+	<p id="id">
+	<h1>Bank Of Odisha</h1>
+
+	<p>
+	<div>
+	<nav>
+		<a href="checkbalance">BALANCE</a>
+		<a href="deposit">DEPOSIT</a> 
+		<a href="withdraw">WITHDRAW</a> 
+		<a href="TransferForm.html">TRANSFER</a>
+		<a href="close">CLOSE AC</a>
+		<a href="About.html">ABOUT US</a>
+		<a href="logout">LOGOUT</a>
+		
+	</nav>	
     </div>
     <p>
         <%

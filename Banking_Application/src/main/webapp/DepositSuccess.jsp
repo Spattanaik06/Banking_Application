@@ -108,35 +108,24 @@ body {
     padding: 0;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px;
-}
-
-header img {
-    height: 60px;
-    width: auto;
-}
-
 h1 {
     text-align: center;
     font-size: 80px;
     color: #ffffff;
     text-shadow: 2px 2px 5px #000000;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-nav {
+div {
+    height: auto;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.8); */
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px 0;
     margin-top: 20px;
 }
 
-nav a {
+a {
     margin: 0 20px;
     text-decoration: none;
     color: #00c3ff;
@@ -144,21 +133,47 @@ nav a {
     transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+a:hover {
     color: #00ffcc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 2px solid #00c3ff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #00a3cc;
 }
 
 p {
     text-align: center;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 18px;
+    margin-top: 20px;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 footer {
@@ -171,22 +186,33 @@ footer {
     color: #ffffff;
     font-size: 14px;
 }
+nav
+{
+background-color: black;
+width:auto;
+height:35px;
+padding-top:10px;
+}
 </style>
 </head>
+
 <body>
-    <header>
-        <img src="./bank_image/bank_logo.png" alt="Bank Logo">
-        <h1>Bank Of Odisha</h1>
-    </header>
-    <nav>
-        <a href="checkbalance">BALANCE</a>
-        <a href="deposit">DEPOSIT</a>
-        <a href="withdraw">WITHDRAW</a>
-        <a href="TransferForm.html">TRANSFER</a>
-        <a href="close">CLOSE AC</a>
-        <a href="About.html">ABOUT US</a>
-        <a href="logout">LOGOUT</a>
-    </nav>
+	<p id="id">
+	<h1>Bank Of Odisha</h1>
+
+	<p>
+	<div>
+	<nav>
+		<a href="checkbalance">BALANCE</a>
+		<a href="deposit">DEPOSIT</a> 
+		<a href="withdraw">WITHDRAW</a> 
+		<a href="TransferForm.html">TRANSFER</a>
+		<a href="close">CLOSE AC</a>
+		<a href="About.html">ABOUT US</a>
+		<a href="logout">LOGOUT</a>
+		
+	</nav>	
+    </div>
     <p>
         <% 
         String msg = (String) request.getAttribute("msg");
