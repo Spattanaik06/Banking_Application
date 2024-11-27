@@ -103,6 +103,14 @@ width:auto;
 height:35px;
 padding-top:10px;
 }
+#data
+{
+
+color:#00c3ff;
+font-size:25px;
+ color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+}
 </style>
 </head>
 
@@ -123,7 +131,7 @@ padding-top:10px;
 		
 	</nav>	
     </div>
-    <p>
+    <p id="data">
         <%
         BankBean bankBean = (BankBean) session.getAttribute("bbean");
         out.println("Enter the amount you want to deposit, " + bankBean.getUname() + "<br>");
