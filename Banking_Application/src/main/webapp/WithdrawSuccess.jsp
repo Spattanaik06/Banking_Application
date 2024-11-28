@@ -73,6 +73,13 @@ width:auto;
 height:35px;
 padding-top:10px;
 }
+ #msg {
+   color:black;
+   background-color: #ffffff;
+   width:450px;
+   margin-left:650px;
+
+} 
 </style>
 </head>
 
@@ -93,7 +100,7 @@ padding-top:10px;
 		
 	</nav>	
     </div>
-    <p>
+    <p id="msg">
 <%
 String msg=(String)request.getAttribute("msg");
 BankBean bankBean=(BankBean)session.getAttribute("bbean");

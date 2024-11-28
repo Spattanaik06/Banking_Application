@@ -45,7 +45,38 @@ a:hover {
     color: #00ffcc;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
 
+input {
+    width: 150%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 2px solid #00c3ff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#subbutton {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+ #subbutton:hover {
+    background-color: #00a3cc;
+}
 
 p {
     text-align: center;
@@ -71,6 +102,43 @@ width:auto;
 height:35px;
 padding-top:10px;
 }
+
+#button
+{
+	padding: 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+#reg
+{
+     padding: 10px 20px;
+    background-color: #00c3ff;
+    font-size: 18px;
+    color: #fff;
+    
+    border-radius: 5px;
+    cursor: pointer;
+     transition: background-color 0.3s ease-in-out;
+}
+
+#reg:hover {
+     background-color: #00a3cc;
+}
+
+ #msg {
+   color:black;
+   background-color: #ffffff;
+   width:450px;
+   margin-left:650px;
+
+} 
 </style>
 </head>
 
@@ -90,15 +158,69 @@ padding-top:10px;
 		<a href="logout">LOGOUT</a>
 		
 	</nav>	
-    </div>
-   <p>
+    </div> 
+   
+   <p id="msg">
 <%
 String msg=(String)request.getAttribute("msg");
 out.println(msg);
 %>
 </p>
 
-<%@include file="TransferForm.html" %>
+<form action="transfer" method="post">
+<p>
+	<table>
+	<tr>
+	<td>
+	Account No. :
+	</td>
+	<td>
+	<input type="text" name="accno">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	USER NAME :
+	</td>
+	<td>
+	<input type="text" name="uname">
+	</td>
+	</tr>
+	<tr>
+	<td>PASSWORD :
+	</td>
+	<td>
+	<input type="password" name="password">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	TARGET ACC NO :
+	</td>
+	<td>
+	<input type="text" name="taccno">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	AMOUNT :
+	</td>
+	<td>
+	<input type="text" name="amount">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	</td>
+	<td>
+	<button id="subbutton" type="submit">SUBMIT</button>
+	</td>
+	<td>
+	  <a  id = "reg" href="TransferForm.html">CLEAR</a>
+	</tr>
+	</table>
+</p>
+</form>
 <footer>
         &copy; 2024 Bank Of Odisha. All Rights Reserved.
     </footer>
